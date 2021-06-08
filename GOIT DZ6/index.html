@@ -26,14 +26,14 @@
             <ul class="contact hero">
                 <li class="links">
                     <a class="contacts link email" href="">
-                        <svg class="contact link iconhead">
+                        <svg class="iconhead">
                             <use href="./image/sprite.svg#envelope"></use>
                         </svg>
                         info@devstudia.com</a></li>
     
                 <li class="links">
                     <a class="contacts link phone" href="">
-                    <svg class="contact link iconhead">
+                    <svg class="iconhead">
                         <use href="./image/sprite.svg#smartphone"></use>
                     </svg>
                     +38 096 111 11 11</a></li>
@@ -403,7 +403,6 @@
     </form>
  
         </div>
-        
 
     </div>
 </footer>
@@ -416,6 +415,8 @@
                     <use href="./image/sprite.svg#close-black-18dp"></use>
                 </svg>
             </button>
+
+            <!-- Форма input -->
 
             <form action="#" class="modal-form">
 
@@ -455,23 +456,17 @@
         </span>
     </label> 
 
-        <span class="check-policy">
-            <input type="checkbox" name="user-policy" class="modal-checkbox visually-hidden-modal" id="chec-policy-id">
+        <label class="checked option">
+            Соглашаюсь с рассылкой и принимаю <a href="" class="conditions-policy">Условия договора</a>
+            <input class="checked__input visually-hidden-modal" type="checkbox">
+            <span class="checked__box"></span>
+        </label>
 
-            <label for="chec-policy-id" class="modal-policy">
-                <!-- <svg class="mod-check-svg" id="mod-svg" width="16px" height="15px">
-                    <use href="./image/sprite.svg#modcheck"></use>
-                </svg> -->
-            Соглашаюсь с рассылкой и принимаю 
-                <a href="" class="conditions-policy">Условия договора</a>
 
-            </label>
-        </span>
         <button type="submit" class="submit-btn modal-button">Отправить</button>
 
-            </form> 
+            </form>
         </div>
-
     </div>
     </div>
     
