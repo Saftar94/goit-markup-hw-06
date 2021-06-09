@@ -285,24 +285,8 @@ transition-duration: 250ms;
     z-index: 1000;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-    animation-name: openmod;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-
 }
-
-@keyframes openmod
-{
-    0% {
-      transform:scale(0);
-    }
-    100% {
-      transform:scale(1);
-    }
-  }
-  
-  
+    
 
 .modal{
     position: absolute;
@@ -328,27 +312,13 @@ transition-duration: 250ms;
     border: 0;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    animation: closemod;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;    
 } 
 .modal-close:hover,
 .modal-close:focus{
     fill: var(--hover-colorblu);
 }
 
-@keyframes closemod
-{
-    0% {
-      transform:scale(1);
-    }
-    100% {
-      transform:scale(0);
-    }
-  }
+
 .is-hidden{
     opacity: 0;
     visibility: hidden;
@@ -644,6 +614,7 @@ transition-duration: 250ms;
     display: flex;
     align-items: baseline;
     background-color:var(--sect-colordbl);
+    justify-content: space-between;
 
 }
 
@@ -683,6 +654,10 @@ margin-right: 70px;
 }
 .links .map{
     color: var(--text-colorwh);
+}
+
+.join{
+    margin-right: 93px;
 }
 
 .join-head{
@@ -1040,9 +1015,17 @@ padding: 20px 24px;
     left: 8px;
 }
 
+.checked__input:focus + .checked__box{
+    border: 2px solid var(--hover-colorblu);
+    border-radius: 2px;
+}
+
 .checked__input:checked + .checked__box{
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='M3.95703 7.75166L3.88825 7.68604L3.81923 7.75141L2.93123 8.59258L2.85486 8.66492L2.93097 8.73753L6.42671 12.0724L6.49574 12.1382L6.56476 12.0724L14.069 4.91352L14.1449 4.84116L14.069 4.76881L13.1873 3.92764L13.1183 3.86183L13.0493 3.92761L6.49577 10.1735L3.95703 7.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E%0A");
-    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
 }
 
   .conditions-policy{
@@ -1082,11 +1065,6 @@ padding: 20px 24px;
     background-color: var(--focus-color);
     color:  var(--text-colorwh);
   }
-
-  .subscribe{
-      margin-left: 93px;
-  }
-
 
   .subscribe-head{
     color: var(--text-colorwh);
